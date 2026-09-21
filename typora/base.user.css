@@ -1,0 +1,153 @@
+/* Existing inline-code, task-list, print and metadata styles. */
+code,
+tt {
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    font-size: 0.9em;
+}
+ 
+code {
+    background-color: #f3f4f4;
+    padding: 0 2px 0 2px;
+}
+ 
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+ 
+@media print {
+    html {
+ font-size: 13px;
+    }
+    table,
+    pre {
+ page-break-inside: avoid;
+    }
+    pre {
+ word-wrap: break-word;
+    }
+}
+ 
+
+#write pre.md-meta-block {
+    padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+ 
+.mathjax-block>.code-tooltip {
+    bottom: .375rem;
+}
+ 
+ 
+ 
+ 
+ 
+
+/* GitHub light-style code blocks, shared by every Typora theme.
+   Typora uses CodeMirror tokenization; colors approximate GitHub's light palette. */
+#write .md-fences {
+    background: #f6f8fa !important;
+    color: #24292f !important;
+    border: 0 !important;
+    border-radius: 6px !important;
+    box-shadow: none !important;
+    padding: 16px !important;
+    margin: 16px 0 !important;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace !important;
+    font-size: 0.85rem !important;
+    line-height: 1.45 !important;
+    text-shadow: none !important;
+    color-scheme: light;
+}
+
+/* Remove decorative window dots without touching heading numbering. */
+#write .md-fences::before,
+#write .md-fences::after,
+#write .md-fences .CodeMirror-scroll::before,
+#write .md-fences .CodeMirror-scroll::after {
+    content: none !important;
+    display: none !important;
+}
+
+#write .md-fences .CodeMirror,
+#write .md-fences .CodeMirror-scroll,
+#write .md-fences .CodeMirror-lines,
+#write .md-fences .CodeMirror-gutters {
+    background: transparent !important;
+    color: #24292f !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    text-shadow: none !important;
+}
+#write .md-fences .CodeMirror-scroll { padding-top: 0 !important; }
+#write .md-fences .CodeMirror-lines { padding: 0 !important; }
+#write .md-fences .CodeMirror pre,
+#write .md-fences > code {
+    background: transparent !important;
+    color: #24292f;
+    border: 0 !important;
+    padding: 0 !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    text-shadow: none !important;
+}
+#write .md-fences .CodeMirror-gutters { border-right: 0 !important; }
+#write .md-fences .CodeMirror-linenumber { color: #6e7781 !important; }
+#write .md-fences .CodeMirror-cursor { border-left: 1px solid #24292f !important; }
+#write .md-fences .CodeMirror-selected,
+#write .md-fences .CodeMirror-selectedtext { background: #cce5ff !important; }
+#write .md-fences .CodeMirror-selectedtext { color: #24292f !important; }
+#write .md-fences .CodeMirror-activeline-background { background: #eaeef2 !important; }
+
+/* Language picker stays readable when the surrounding theme is dark. */
+#write .md-fences .code-tooltip {
+    background: #f6f8fa !important;
+    color: #57606a !important;
+    border-color: #d0d7de !important;
+    box-shadow: none !important;
+}
+#write .md-fences .code-tooltip-content,
+#write .md-fences .code-tooltip input,
+#write .md-fences .code-tooltip .ty-input {
+    background: transparent !important;
+    color: #57606a !important;
+}
+
+/* Scope token colors to rendered code blocks, not the Markdown source editor. */
+#write .md-fences .cm-keyword,
+#write .md-fences .cm-operator { color: #cf222e !important; }
+#write .md-fences .cm-number,
+#write .md-fences .cm-atom,
+#write .md-fences .cm-attribute,
+#write .md-fences .cm-variable-2 { color: #0550ae !important; }
+#write .md-fences .cm-def,
+#write .md-fences .cm-variable-3,
+#write .md-fences .cm-type { color: #8250df !important; }
+#write .md-fences .cm-string,
+#write .md-fences .cm-string-2 { color: #0a3069 !important; }
+#write .md-fences .cm-comment,
+#write .md-fences .cm-quote { color: #6e7781 !important; font-style: normal; }
+#write .md-fences .cm-meta,
+#write .md-fences .cm-builtin { color: #953800 !important; }
+#write .md-fences .cm-tag { color: #116329 !important; }
+#write .md-fences .cm-variable,
+#write .md-fences .cm-property,
+#write .md-fences .cm-qualifier,
+#write .md-fences .cm-bracket,
+#write .md-fences .cm-punctuation { color: #24292f !important; }
+#write .md-fences .cm-header,
+#write .md-fences .cm-link { color: #0550ae !important; }
+#write .md-fences .cm-positive { color: #116329 !important; background: #dafbe1; }
+#write .md-fences .cm-negative,
+#write .md-fences .cm-error { color: #82071e !important; background: #ffebe9; }

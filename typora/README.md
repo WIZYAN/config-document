@@ -1,0 +1,1 @@
+# C:\Users\name\AppData\Roaming\Typora\themes
