@@ -1,0 +1,44 @@
+{
+    "renesas-platform.crossProbeClangdPath": "C:\\Users\\CI\\.renesas\\platform\\cross-probe\\common\\clangd-proxy.exe",
+    "memory-inspector.debugTypes": [
+        "gdb",
+        "embedded-debug",
+        "arm-debugger",
+        "renesas-hardware",
+        "renesas-simulator",
+        "renesas-cloud-jlink",
+        "renesas-rcar-linux"
+    ],
+    "cmake.additionalKits": [
+        "c:\\Users\\CI\\.renesas\\platform\\cmake\\cmake-kits.json"
+    ],
+    "renesas-smart-manual.databasePath": "c:\\Users\\CI\\AppData\\Roaming\\Code\\User\\globalStorage\\renesaselectronicscorporation.renesas-smart-manual\\downloads\\RA4M2\\RA4M2_en",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.default.includePath": [
+    "${workspaceFolder}/**"
+],
+"C_Cpp.default.browse.path": [
+    "${workspaceFolder}/**"
+],
+"github.copilot.chat.commitMessageGeneration.instructions": [
+    {
+        "text": "生成 Git 提交信息时必须遵循以下格式：第一行使用 Conventional Commits 格式：<type>: <中文标题>。type 只能从 feat、fix、refactor、test、docs、perf、chore 中选择。标题必须使用简体中文，并准确概括本次最主要的修改。标题后空一行，然后使用 '- ' 开头逐条列出主要修改内容，每条使用简体中文。文件名、函数名、变量名、协议名、芯片型号和接口名保持原始英文，不要翻译，例如 PT100、Modbus、UART、ADS1118、F_pt100.c。不要生成英文描述句子，不要生成无关内容。"
+    }
+],
+"C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
+"C_Cpp.default.compilerPath": "C:/Renesas/RA/e2studio_v2022-04_fsp_v3.8.0/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
+
+"C_Cpp.default.intelliSenseMode": "gcc-arm",
+
+"C_Cpp.default.cStandard": "c11",
+
+"C_Cpp.default.cppStandard": "c++17",
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "clangd.path": "c:\\Users\\CI\\AppData\\Roaming\\Code\\User\\globalStorage\\llvm-vs-code-extensions.vscode-clangd\\install\\22.1.6\\clangd_22.1.6\\bin\\clangd.exe",
+    "renesas-platform.activeFspSmartConfiguratorPath": "C:\\Users\\CI\\.renesas\\platform\\sc\\rz\\fsp_4.0.0\\eclipse\\rasc.exe",
+    "cmake.environment": {
+        "RASC_EXE_PATH": "C:\\Users\\CI\\.renesas\\platform\\sc\\rz\\fsp_4.0.0\\eclipse\\rasc.exe"
+    },
+    "editor.renderWhitespace": "none"
+}
+
