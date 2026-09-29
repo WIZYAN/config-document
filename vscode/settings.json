@@ -25,6 +25,8 @@
         "text": "生成 Git 提交信息时必须遵循以下格式：第一行使用 Conventional Commits 格式：<type>: <中文标题>。type 只能从 feat、fix、refactor、test、docs、perf、chore 中选择。标题必须使用简体中文，并准确概括本次最主要的修改。标题后空一行，然后使用 '- ' 开头逐条列出主要修改内容，每条使用简体中文。文件名、函数名、变量名、协议名、芯片型号和接口名保持原始英文，不要翻译，例如 PT100、Modbus、UART、ADS1118、F_pt100.c。不要生成英文描述句子，不要生成无关内容。"
     }
 ],
+
+"gitlens.ai.generateCommits.customInstructions": "使用 Conventional Commits 规范生成 Git 提交信息。第一行必须严格使用 '<type>: <中文标题>' 格式，其中 type 只能使用 feat、fix、refactor、test、docs、perf、chore。标题必须使用简体中文，准确概括本次最主要的修改。标题后空一行，然后使用 '- ' 开头逐条描述主要修改内容，每条都必须使用简体中文。文件名、函数名、变量名、宏、协议名、接口名、芯片型号和专业缩写保持原始英文，不要翻译，例如 F_pt100.c、F_pt100.h、ADS1118、PT100、Modbus、UART、FreeRTOS。描述必须基于实际 Git diff，不得编造未发生的修改。优先归纳功能新增、Bug 修复、接口调整、驱动修改、协议处理、任务逻辑和测试变化，不要机械地逐文件罗列，也不要描述无意义的格式变化。提交信息要求简洁、准确、技术化，不要生成完整英文描述句子。",
 "C_Cpp.default.browse.limitSymbolsToIncludedHeaders": false,
 "C_Cpp.default.compilerPath": "C:/Renesas/RA/e2studio_v2022-04_fsp_v3.8.0/toolchains/gcc_arm/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
 
@@ -39,6 +41,7 @@
     "cmake.environment": {
         "RASC_EXE_PATH": "C:\\Users\\CI\\.renesas\\platform\\sc\\rz\\fsp_4.0.0\\eclipse\\rasc.exe"
     },
-    "editor.renderWhitespace": "none"
+    "editor.renderWhitespace": "none",
+    "gitlens.graph.details.location": "auto"
 }
 
